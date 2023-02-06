@@ -42,9 +42,9 @@ Users should be able to:
 
 ### Built with
 
-- [React](https://reactjs.org/) - JS library
 - Semantic HTML5 markup
 - SASS
+- JavaScript
 - Flexbox
 - Mobile-first workflow
 - [Advice API](https://api.adviceslip.com/advice)
@@ -55,7 +55,7 @@ I learnt how to implement async and await in my code to fetch data from an API
 
 ### Continued development
 
-I will like to work more with apis in the future and also with React.JS, to write more declarative codes
+I will like to work more with apis in the future.
 
 ## Author
 
