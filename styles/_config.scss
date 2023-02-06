@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+html{
+    font-size: 62.5%;
+
+}
+body{
+    @include flexProp(0);
+    font-size: 1.6rem;
+    font-family: Manrope, system-ui, -apple-system, sans-serif;
+    background-color: $Dark-Blue;
+}
+
+
+/* =========================
+|GENERAL STYLINGS|
+========================= */
+
+a{
+    text-decoration: none;
+    color: initial;
+}
+li{
+    list-style: none;
+}
+.section{
+    padding-inline: 5%;
+}
+button{
+    cursor: pointer;
+    border: none;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+
+@font-face{
+    font-family: Manrope;
+    src: url(/font/Manrope-VariableFont_wght.ttf);
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotateZ(0deg);
+    }
+   
+    50%{
+        transform: rotateZ(0deg);
+    }
+    75%{
+        transform: rotateZ(0deg);
+    }
+    
+    100%{
+        transform: rotateZ(360deg);
+
+    }
+}
+/* =========================
+||
+========================= */
+/* =========================
+||
+========================= */

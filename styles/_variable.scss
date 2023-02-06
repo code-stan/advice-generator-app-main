@@ -1,0 +1,17 @@
+$White: rgb(255, 255, 255);
+$Light-Cyan: hsl(193, 38%, 86%);
+$Neon-Green: hsl(150, 100%, 66);
+$Grayish-Blue: hsl(216, 20%, 30%);
+$Dark-Grayish-Blue: hsl(217, 19%, 24%);
+$Dark-Blue: hsl(218, 23%, 16%);
+
+$fs-header: 1.1rem;
+$fs-content: 2.4rem;
+
+@mixin flexProp($gap){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: $gap;
+}

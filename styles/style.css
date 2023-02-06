@@ -1,0 +1,166 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0;
+  font-size: 1.6rem;
+  font-family: Manrope, system-ui, -apple-system, sans-serif;
+  background-color: hsl(218deg, 23%, 16%);
+}
+
+/* =========================
+|GENERAL STYLINGS|
+========================= */
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+li {
+  list-style: none;
+}
+
+.section {
+  padding-inline: 5%;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+@font-face {
+  font-family: Manrope;
+  src: url(/font/Manrope-VariableFont_wght.ttf);
+}
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(0deg);
+  }
+  75% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(0deg);
+  }
+  75% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+/* =========================
+||
+========================= */
+/* =========================
+||
+========================= */
+/* =========================
+|MAIN CONTAINER AND CONTENT|
+========================= */
+.main {
+  position: relative;
+  max-width: 50rem;
+  margin: 8em 1.5rem;
+  padding: 4rem 2rem 3rem;
+  background-color: hsl(217deg, 19%, 24%);
+  border-radius: 1rem;
+  box-shadow: 40px 40px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.main__header h1 {
+  color: hsl(150deg, 100%, 66%);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.main__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.main__content__advice {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: hsl(193deg, 38%, 86%);
+}
+.main__button button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  bottom: -25%;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: hsl(150deg, 100%, 66%);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.main__button button:hover {
+  box-shadow: 0 0 25px 1px hsl(150deg, 100%, 66%);
+}
+.main__button button img {
+  -webkit-animation: rotate 3s ease-in-out infinite;
+          animation: rotate 3s ease-in-out infinite;
+}
+
+/* =========================
+      |MEDIA QUERY|
+========================= */
+@media (min-width: 50em) {
+  body {
+    min-height: 100vh;
+  }
+  .main {
+    margin-block: 5em;
+    padding-inline: 4rem;
+  }
+  .main__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+  }
+}/*# sourceMappingURL=style.css.map */

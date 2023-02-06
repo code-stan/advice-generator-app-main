@@ -1,0 +1,78 @@
+@import 'variable';
+@import 'config';
+
+/* =========================
+|MAIN CONTAINER AND CONTENT|
+========================= */
+.main{
+    position: relative;
+    max-width: 50rem;
+    margin: 8em 1.5rem;
+    padding: 4rem 2rem 3rem;
+    background-color: $Dark-Grayish-Blue;
+    border-radius: 1rem;
+    box-shadow: 40px 40px 20px rgba($color: #000, $alpha: 0.1);
+    @include flexProp(2rem);
+    
+    //MAIN HEADER
+    &__header {
+        h1{
+            color: $Neon-Green;
+            font-size: $fs-header;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+    }
+    
+    //MAIN CONTENT
+    &__content{
+        @include flexProp(2rem);
+        
+        &__advice{
+            text-align: center;
+            font-size: $fs-content;
+            font-weight: 700;
+            color: $Light-Cyan;
+        }
+    }
+    
+    &__button button{
+        @include flexProp(0);
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -55%);
+        bottom: -25%;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        background-color: $Neon-Green;
+        transition: box-shadow .3s ease-in-out;
+
+        
+        &:hover{
+            box-shadow: 0 0 25px 1px $Neon-Green;
+        }
+        
+        & img{
+            animation: rotate 3s ease-in-out infinite ;
+            
+        }
+    }
+    
+}
+/* =========================
+      |MEDIA QUERY|
+========================= */
+@media (min-width: 50em){
+    body{
+        min-height: 100vh;
+    }
+    .main{
+        margin-block: 5em;
+        padding-inline: 4rem;
+
+        &__content {
+                @include flexProp(3rem);
+        }
+    }
+}
